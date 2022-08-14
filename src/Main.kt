@@ -10,4 +10,5 @@ fun main(args: Array<String>) {
 
     val decryptedValue: String? =encryptor.decryptWithAES(secretKey, encryptedValue)
     println(decryptedValue)
+    println("Hello, World!")
 }

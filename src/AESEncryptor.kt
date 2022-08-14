@@ -61,7 +61,7 @@ class AESEncryptor {
 
     fun decryptWithAES(key: String, strToDecrypt: String?): String? {
         Security.addProvider(BouncyCastleProvider())
-        var keyBytes: ByteArray
+        val keyBytes: ByteArray
 
         try {
             keyBytes = key.toByteArray(charset("UTF8"))
